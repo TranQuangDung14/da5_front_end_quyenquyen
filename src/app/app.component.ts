@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'front_end_angular_da5_qd';
+  
+
 }

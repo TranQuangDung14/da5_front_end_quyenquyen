@@ -654,6 +654,21 @@ export class AdminService {
     );
   }
 
-}
 
+
+
+
+
+
+
+  // Front end (user)
+  get_index_product(): Observable<any> {
+    return this._httpClient.get<any>(this.API_URL + 'get_product/')};
+  
+ //detail dữ liệu theo id
+ get_detail(id: number): Observable<any> {
+  return this._httpClient.get<any>(this.API_URL + 'get_product/' + id);
+}
+}
+ 
 

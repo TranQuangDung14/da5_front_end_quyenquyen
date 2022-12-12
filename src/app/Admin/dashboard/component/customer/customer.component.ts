@@ -26,6 +26,7 @@ export class CustomerComponent implements OnInit {
   ngOnInit() {
     this.getall_customer();
   }
+  
   getall_customer(){
     this.subscription = this.admin.get_all_customer().subscribe((data:any)=>{
       console.log(data);
@@ -35,6 +36,9 @@ export class CustomerComponent implements OnInit {
     }
     )
 }
+
+
+
   onDelete(id: number){
     if(confirm("bạn có chắc chắn xóa không ?")){
     this.subscription = this.admin.delete_customer(id).subscribe((data)=>{

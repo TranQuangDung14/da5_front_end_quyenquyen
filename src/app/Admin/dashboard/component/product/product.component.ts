@@ -89,9 +89,9 @@ export class ProductComponent implements OnInit {
   onCreate() {
     // console.log('dâta',this.product_fromCreate.value);
     // console.log(this.product_fromCreate.value);
-    var formData = new FormData();
+    // var formData = new FormData();
     // formData.append('file', this.postForm.value);
-    console.log(formData);
+    // console.log(formData);
     this.admin.create_product(this.product_fromCreate.value).subscribe(data => {
       console.log('data2', this.product_fromCreate.value);
 
@@ -99,26 +99,6 @@ export class ProductComponent implements OnInit {
       this.get_all_product();
     })
   }
-
-
-  //   onFileSelected(event:any) {
-
-  //     const file:File = event.target.files[0];
-
-
-  //     // if (file) {
-
-  //     //     this.fileName = file.name;
-
-  //     //     const formData = new FormData();
-
-  //     //     formData.append("thumbnail", file);
-
-  //     //     const upload$ = this.http.post("/api/thumbnail-upload", formData);
-
-  //     //     upload$.subscribe();
-  //     // }
-  // }
 
   onDelete(id: number) {
     if (confirm("bạn có chắc chắn xóa không ?")) {
@@ -139,50 +119,6 @@ export class ProductComponent implements OnInit {
     this.get_all_product();
   }
 
-  // url ="./assets/image/empty.jpg";
-  // onselectFile(e:any){
-  //   // console.log(e);
 
-  //   if(e.target.files){
-  //     let reader = new FileReader();
-  //     reader.readAsDataURL(e.target.files[0]);
-  //     reader.onload=(event:any)=>{
-  //       this.url=event.target.result;
-
-  //       console.log('đây là ảnh',event.target.result);
-  //     }
-  //   }
-  // }
-
-  // updateImage(ev:any) {
-  //   const file = ev.target.files[0];
-  //   this.postForm.patchValue({
-  //     banner: file
-  //   })
-  // }
-
-
-
-
-  // handleFileInput(files: FileList) {
-  //   this.fileToUpload = files.item(0);
-  // }
-
-  // onFileSelected(event) {
-
-  //   const file:File = event.target.files[0];
-
-  //   if (file) {
-
-  //       this.fileName = file.name;
-
-  //       const formData = new FormData();
-
-  //       formData.append("thumbnail", file);
-
-  //       const upload$ = this.http.post("/api/thumbnail-upload", formData);
-
-  //       upload$.subscribe();
-  //   }
 
 }

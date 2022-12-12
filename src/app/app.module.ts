@@ -10,6 +10,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 // import { CKEditorModule } from 'ckeditor4-angular';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { CKEditorModule } from 'ckeditor4-angular';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { SanitizeHtmlPipe } from './share/pipe/sanitize-html.pipe';
 
 @NgModule({
@@ -26,6 +28,8 @@ import { CKEditorModule } from 'ckeditor4-angular';
     HttpClientModule,
     ReactiveFormsModule,
     CKEditorModule,
+    CarouselModule,
+    BrowserAnimationsModule, 
 
   ],
   providers: [],

@@ -11,6 +11,7 @@ import { AdminService } from 'src/app/service/admin.service';
 export class ProductEditComponent implements OnInit {
 
   id: number = 0;
+  product :any;
   constructor(private admin : AdminService ,private _router: ActivatedRoute , private router :Router) { }
   product_fromEdit: FormGroup = new FormGroup({
     category_id: new FormControl(),
@@ -24,6 +25,7 @@ export class ProductEditComponent implements OnInit {
     this.id = this._router.snapshot.params['id'];
     this.admin.get_product(this.id).subscribe(data => {
       console.log(data)
+      this.product=data;
       this.product_fromEdit = new FormGroup({
         category_id: new FormControl(data.category_id),
         name: new FormControl(data.name),
@@ -32,6 +34,7 @@ export class ProductEditComponent implements OnInit {
         image: new FormControl(data.image),
         description: new FormControl(data.description),
       });
+      console.log(this.product_fromEdit);
     })
   }
   onEdit() {
