@@ -8,10 +8,11 @@ import { TestppComponent } from './testpp/testpp.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 // import { CKEditorModule } from 'ckeditor4-angular';
-import { FileUploadComponent } from './file-upload/file-upload.component';
+// import { FileUploadComponent } from './file-upload/file-upload.component';
 import { CKEditorModule } from 'ckeditor4-angular';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { SanitizeHtmlPipe } from './share/pipe/sanitize-html.pipe';
 // import { SanitizeHtmlPipe } from './share/pipe/sanitize-html.pipe';
 
 @NgModule({
@@ -19,8 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     TestppComponent,
     LoginComponent,
-    FileUploadComponent,
+    // FileUploadComponent,
     // SanitizeHtmlPipe,
+
   ],
   imports: [
     BrowserModule,
@@ -29,8 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     CKEditorModule,
     CarouselModule,
-    BrowserAnimationsModule, 
-
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

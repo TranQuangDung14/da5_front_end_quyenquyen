@@ -38,10 +38,10 @@ import { WarehouseComponent } from './dashboard/component/warehouse/warehouse.co
 import { WarehouseEditComponent } from './dashboard/component/warehouse/warehouse-edit/warehouse-edit.component';
 import { CKEditorModule } from 'ckeditor4-angular';
 import { DashboardAdminComponent } from './dashboard/component/dashboard-admin/dashboard-admin.component';
-import { SanitizeHtmlPipe } from '../share/pipe/sanitize-html.pipe';
+// import { SanitizeHtmlPipe } from '../share/pipe/sanitize-html.pipe';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { HttpClientModule } from '@angular/common/http';
-// import { SanitizeHtmlPipe } from '../share/pipe/sanitize-html.pipe';
+import { SharedMessengerModule } from '../shared-messenger/shared-messenger.module';
 
 
 const routes: Routes = [
@@ -260,7 +260,7 @@ const routes: Routes = [
     VideoEditComponent,
     WarehouseComponent,
     WarehouseEditComponent,
-    SanitizeHtmlPipe,
+    // SanitizeHtmlPipe
 
 
   ],
@@ -270,7 +270,7 @@ const routes: Routes = [
     CKEditorModule,
     NgxPaginationModule,
     HttpClientModule,
-    // SanitizeHtmlPipe,
+    SharedMessengerModule,
     RouterModule.forChild(routes) // sử dụng để tạo vùng admin
   ]
 })

@@ -1062,6 +1062,7 @@ ol {
 }
 
 .breadcrumb__option a {
+	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
 	color: #ffffff;
@@ -2317,6 +2318,7 @@ ol {
 }
 
 .blog__item__text h5 a {
+	text-decoration: none;
 	font-size: 20px;
 	color: #1c1c1c;
 	font-weight: 700;
@@ -2327,6 +2329,7 @@ ol {
 }
 
 .blog__item__text .blog__btn {
+	text-decoration: none;
 	display: inline-block;
 	font-size: 14px;
 	color: #1c1c1c;
@@ -2382,6 +2385,7 @@ ol {
 }
 
 .blog__sidebar__item ul li a {
+	text-decoration: none;
 	font-size: 16px;
 	color: #666666;
 	line-height: 48px;

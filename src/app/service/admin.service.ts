@@ -659,6 +659,7 @@ export class AdminService {
 
 
 
+  /// User
 
 
   // Front end (user)
@@ -669,6 +670,24 @@ export class AdminService {
  get_detail(id: number): Observable<any> {
   return this._httpClient.get<any>(this.API_URL + 'get_product/' + id);
 }
+
+// get video user
+get_index_video(): Observable<any> {
+  return this._httpClient.get<any>(this.API_URL + 'get_video/')};
+
+  // get posts user
+get_index_posts(): Observable<any> {
+  return this._httpClient.get<any>(this.API_URL + 'get_posts/')};
+
+  // detail posts user
+get_detail_posts(id: number): Observable<any> {
+  return this._httpClient.get<any>(this.API_URL + 'get_posts/' + id);
 }
+
+
+
+}
+
+
  
 
